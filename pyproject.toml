@@ -1,0 +1,19 @@
+[project]
+name = "llm-ans-compress"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "zeiaibengkui", email = "liqi6_6_6@163.com" }]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.1",
+    "torch>=2.14.0",
+    "transformers>=5.17.0",
+]
+
+[project.scripts]
+llm-ans-compress = "llm_ans_compress:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
